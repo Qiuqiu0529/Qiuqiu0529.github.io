@@ -1,0 +1,35 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+    color: white;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #eee;
+  }
+  
