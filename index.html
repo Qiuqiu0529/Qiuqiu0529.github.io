@@ -1,26 +1,63 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Magic Circle</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>My Magic Circle</h1>
-    <p>Your tagline or subtitle here</p>
+
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">My Magic Circle</h1>
+      <nav>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#gallery">Works</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <script>
+        function toggleMenu() {
+          const nav = document.getElementById('navLinks');
+          nav.classList.toggle('active');
+        }
+      </script>
+    </div>
   </header>
 
-  <section class="gallery">
-    <img src="assets/images/qimo.png" alt="Artwork 1" />
-    <img src="assets/images/kcq.jpg" alt="Artwork 2" />
-    <!-- 更多图片 -->
+  <section class="hero" id="hero">
+    <h2>Welcome to My Magic Circle</h2>
+    <p>An artistic space of mystery and wonder</p>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h3>My Works</h3>
+    <div class="grid">
+      <img src="assets/images/kcq.jpg" alt="Work 1"/>
+      <img src="assets/images/bubble.png" alt="Work 2"/>
+      <img src="assets/images/Itoo.jpg" alt="Work 3"/>
+      <img src="assets/images/catArchitecture.png" alt="Work 4"/>
+      <img src="assets/images/qimo.jpg" alt="Work 5"/>
+      <!-- 更多图片 -->
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-content">
+      <img src="assets/images/about.jpg" alt="About me"/>
+      <div class="about-text">
+        <h3>About Me</h3>
+        <p>I am a multimedia artist exploring the intersection of emotion, memory, and identity.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 My Magic Circle</p>
+    <p>© 2025 My Magic Circle | Contact: h1711871800@gmail.com</p>
   </footer>
+
 </body>
 </html>
